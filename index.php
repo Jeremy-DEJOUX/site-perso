@@ -12,10 +12,10 @@
     <section class="section">
         <div class="container">
             <h1 class="title">
-                Hello World
+                Jeremy DEJOUX
             </h1>
             <p class="subtitle">
-                My first website with <strong>Bulma</strong>!
+                Dev Web en apprentissage à  <strong>La Plateforme_</strong>!
             </p>
         </div>
     </section>
