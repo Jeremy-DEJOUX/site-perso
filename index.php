@@ -15,10 +15,10 @@
                 Jeremy DEJOUX
             </h1>
             <p class="subtitle">
-                Dev Web en apprentissage à  <strong>La Plateforme_</strong>!
+                Dev Web en apprentissage à <strong>La Plateforme_</strong>!
             </p>
 
-            <p>On fait un essaie pour le WebHooks</p>
+            <button class="login">Button</button>
         </div>
     </section>
 </body>
