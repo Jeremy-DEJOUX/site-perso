@@ -1,0 +1,405 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Rhodium+Libre:regular);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700);
+
+$myBlack: #222831;
+$myGrey: #393E46;
+$myYellow: #FFD369;
+$myWhite: #EEEEEE;
+
+
+html{
+    margin: 0px;
+}
+body{
+    background-color: $myBlack;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    #container_left{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        
+
+        #block_top{
+            width: 100%;
+            height: 48%;
+            background-color: $myWhite;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-radius: 5px;
+            position: relative;
+
+            h2{
+                margin-left: 2%;
+                font-size: 25px;
+                color: $myYellow;
+                text-shadow: 1px 1px 2px $myBlack;
+            }
+        }
+
+        #block_bottom{
+            width: 100%;
+            height: 48%;
+            background-color: $myYellow;
+            position: relative;
+            border-radius: 5px;
+        }
+
+                        /* Hide the images by default */
+            .mySlides {
+                display: none;
+                position: absolute;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                color:$myBlack;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: $myWhite;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: $myBlack;
+                font-size: 20px;
+                position: absolute;
+                font-weight: 700;
+                bottom: 0;
+                right: 1%;
+            }
+
+            .projet{
+                position: absolute;
+                left: 2%;
+                top: 5%;
+                margin: 0;
+                font-size: 25px;
+                color: $myBlack;
+                text-shadow: 1px 1px 2px $myBlack;
+            }
+            .name_projet{
+                position: absolute;
+                left: 5%;
+                top: 15%;
+                margin: 0;
+                font-size: 20px;
+                color: $myBlack;
+            }
+
+            .img_projet{
+                max-width: 60%;
+                max-height: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    box-shadow: 5px 5px 7px black;
+                    border-radius: 5px;
+                }
+            }
+
+
+
+
+
+    #container_right{
+        border-radius: 15px;
+        height: 100%;
+        width: 25%;
+        background-color: $myWhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        #box_top{
+            width: 90%;
+            height: 20%;
+            // background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid $myBlack;
+
+            font-family: 'Roboto';
+        }
+
+        #box_mid{
+            width: 90%;
+            height: 60%;
+            border-bottom: 1px solid $myBlack;
+
+            p{
+              font-size: 20px;
+              text-align: justify;
+              line-height: 40px;
+
+              a{
+                text-decoration: none;
+                color: $myYellow;
+                text-shadow: 1px 1px 2px black;
+              }
+            }
+        }
+
+        #box_bottom{
+            width: 90%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+            #contact{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;                
+                    a{ color: $myGrey; }
+            }
+
+
+
+
+
+
+img {
+vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+  .fab, .far{
+      font-size: 50px;
+  }
+
+  .fa-html5{
+      color: #F4470B;
+      font-size: 50px;
+  }
+
+  .fa-css3-alt{
+      color:  #31A4D5;
+      font-size: 50px;
+  }
+
+  .fa-sass{
+      color: #F783AC;
+      font-size: 50px;
+  }
+
+  .fa-php{
+      color: #7377AD;
+      font-size: 50px;
+  }
+
+  .fa-js-square{
+      color: #EFD81D;
+      font-size: 50px;
+  }
+
+  .fa-wordpress{
+      color: #30353A;
+      font-size: 50px;
+  }
