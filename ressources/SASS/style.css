@@ -9,7 +9,7 @@ html {
 body {
   background-color: #222831;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0px;
   padding: 0;
   font-family: 'Montserrat';
@@ -29,7 +29,7 @@ body {
 }
 
 main {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +46,7 @@ main {
 }
 
 #container_left {
-  height: 100%;
+  height: 90%;
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,7 +195,7 @@ main {
 
 #container_right {
   border-radius: 15px;
-  height: 100%;
+  height: 90%;
   width: 25%;
   background-color: #EEEEEE;
   display: -webkit-box;
@@ -290,10 +290,6 @@ main {
   color: #393E46;
 }
 
-img {
-  vertical-align: middle;
-}
-
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -386,7 +382,54 @@ img {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  body {
+    height: auto;
+    width: 100%;
+  }
+  main {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #container_left {
+    width: 90%;
+    height: 100vh;
+  }
+  #container_right {
+    width: 90%;
+    min-height: 100vh;
+  }
+  #box_top {
+    width: 100%;
+    height: calc(100% / 3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #box_mid {
+    height: calc(100% / 3);
+    width: 90%;
+  }
+  #box_bottom {
+    height: calc(100% / 3);
+    width: 100%;
+  }
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
@@ -411,6 +454,21 @@ img {
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+}
+
+@media (max-height: 900px) {
+  #box_top img {
+    max-width: 25%;
+  }
+  #box_mid p {
+    font-size: 10px;
+  }
+  #block_bottom .projet {
+    font-size: 15px;
+  }
+  #block_bottom .name_projet {
+    font-size: 15px;
   }
 }
 
