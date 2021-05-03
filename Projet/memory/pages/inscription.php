@@ -1,6 +1,6 @@
 <?php
 
-require_once('../Classes/Db.php');
+require_once('../classes/Db.php');
 if (isset($_POST['submit'])) {
     $_SESSION['user']->register($bdd, $_POST['login_user'], $_POST['password_user'], $_POST['confirmpassword']);
 }
