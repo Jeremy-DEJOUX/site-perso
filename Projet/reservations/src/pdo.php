@@ -9,8 +9,8 @@ require_once('function.php');
 
 $_SESSION['user'] = new User();
 
-    $dsn = "mysql:host=localhost;dbname=reservationsalles";
-    $userDB = 'root';
-    $passDB = '';
+    $dsn = "mysql:host=localhost;dbname=jeremy-dejoux_reservationsalles";
+    $userDB = 'Jeremy';
+    $passDB = 'Minato6510';
     $bdd = new PDO("$dsn","$userDB", "$passDB");
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
