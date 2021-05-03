@@ -3,9 +3,9 @@
 class Db{
 
     private $host = "localhost";
-    private $username = "root";
-    private $password = "";
-    private $database = "boutique";
+    private $username = "Jeremy";
+    private $password = "Minato6510";
+    private $database = "jeremy-dejoux_boutique";
     private $db;
 
     public function __construct($host = null, $username = null, $password = null, $database = null){
