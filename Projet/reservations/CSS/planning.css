@@ -1,0 +1,47 @@
+main{
+  width: 100%;
+  height: 90vh;
+  font-family: Montserrat,cursive;
+  background: url('../ressources/img/triangle-mosaic.png');
+  color: rgba(25, 25, 25, 0.8);
+}
+
+main a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+h1{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+section{
+  width: 30%;
+  height: 10vh;
+}
+
+section > a{
+  font-size: 30px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 75%;
+  height: 70vh;
+}
+td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#reservation{
+  background: url('../ressources/img/dark-honeycomb.png') ;
+  text-align: center;
+  color: White;
+}
+#reservation a{
+  color: rgba(230, 230, 230, 0.8);
+}
