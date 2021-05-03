@@ -1,0 +1,92 @@
+body{
+    width:100%;
+    height:90vh;
+    /* overflow:hidden; */
+}
+main{
+    width:100%;
+}
+#Menu_1{
+    width: 50vh;
+    height: 30vh;
+    font-size: 30px;
+}
+#Menu_1 a{
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+#Menu_1 a:hover{
+    color: rgb(202, 194, 194);
+}
+
+/* IF CONNECTED */
+#Body_Connected{
+    width: 100%;
+    height: 100%;
+}
+#Choose_Dif{
+    width: 100%;
+    height: 70vh;
+}
+
+#Memory_flip{
+    width: 100%;
+}
+
+.card {
+    width: 18%;
+    height: 70vh;
+    border: 1px solid white;
+    perspective: 800px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.Plantes_1_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0s;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card:hover .Plantes_1_card_inner {
+    transform:scale(1) rotateY(180deg);
+    transition: 0.5s all ease-in;
+}
+
+/* Position the front and back side */
+.card_front,
+.card_back {
+    position: absolute;
+    perspective: 900px;
+    backface-visibility: hidden;
+    transform: scale(0.5);
+     width: 100%;
+     height: 100%;
+}
+
+.card_front {
+   background: url('../img/introCards07.png') no-repeat center center;
+   background-size: contain;
+}
+
+.card_back {
+    color: black;
+    text-shadow: 1px 1px 3px white;
+    background: url('../img/introCards01.png') no-repeat center center;
+    background-size: contain;
+    transform: rotateY(180deg);
+}
+
+
+
+( !) Notice: Undefined index: difficulty in D:\Code\Wampp\www\Project Pool 2\memory\index.php on line 22 Call Stack # Time Memory Function Location 1 0.0001 361352 {
+    main
+}
+
+() ...\index.php:0 Inscription Connexion M E M O R Y

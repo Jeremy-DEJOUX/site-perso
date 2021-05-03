@@ -1,0 +1,36 @@
+main {
+    width: 100%;
+    height: 90vh;
+    font-family: Montserrat, cursive;
+    background: url('../ressources/img/triangle-mosaic.png');
+    color: rgba(25, 25, 25, 0.8);
+}
+
+form {
+    width: 50%;
+    height: 70%;
+    background-color: rgba(25, 25, 25, 0.1);
+    box-shadow: 1px 1px 10px black;
+    border-radius: 15px;
+    color: Black;
+}
+
+form>section {
+    width: 100%;
+    height: 50%;
+}
+
+button {
+    margin-bottom: 5vh;
+    padding: 5px;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+    transition: 0.5s;
+    box-shadow: 1px 1px 3px black;
+}
