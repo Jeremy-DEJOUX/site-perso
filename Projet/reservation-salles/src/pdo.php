@@ -9,7 +9,7 @@ require_once('function.php');
 
 $_SESSION['user'] = new User();
 
-    $dsn = "mysql:host=localhost;dbname=jeremy-dejoux_reservationsalles";
+    $dsn = "mysql:host=localhost;dbname=jeremy-dejoux_reservations";
     $userDB = 'Jeremy';
     $passDB = 'Minato6510';
     $bdd = new PDO("$dsn","$userDB", "$passDB");
