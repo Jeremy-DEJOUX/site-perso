@@ -367,3 +367,35 @@ footer i {
   transition: .6s ease-in opacity,.6s ease-out transform;
 }
 
+#competences{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-html5{
+  font-size: 100px;
+  color: rgb(241, 101, 41);
+}
+
+.fa-css3-alt{
+  font-size: 100px;
+  color: rgb(41, 101, 241);
+}
+
+.fa-sass{
+  font-size: 100px;
+  color: rgb(206, 103, 154);
+}
+
+.fa-js-square{
+  font-size: 100px;
+  color: rgb(247, 224, 24);
+}
+
+.fa-php{
+  font-size: 100px;
+  color: rgb(119, 123, 179);
+}
+
