@@ -1,5 +1,5 @@
 <?php
-require_once('../Classes/Db.php');
+require_once('../classes/Db.php');
 require_once '../functions/functions.php';
 require_once '../classes/Autoloader.php';
 spl_autoload_register(['Autoloader', 'autoload']);

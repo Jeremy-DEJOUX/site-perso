@@ -3,7 +3,7 @@
     session_start();
     require_once 'functions/functions.php';
 
-    Autoloader::register();
+    // Autoloader::register();
     
     // retour de l'objet $game = new Memory()
     $game = unserialize($_SESSION['game']);
