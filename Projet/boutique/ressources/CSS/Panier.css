@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Rhodium+Libre:regular);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #495464;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+@media (min-width: 800px){
+     #navigation{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #navigation a{
+                text-decoration: none;
+                color: #F4F4F2;
+                font-size: 2em;
+                font-family: 'Montserrat';
+                font-weight: 500;
+                padding: 10px;
+            }
+            #navigation a:hover{
+                transition: 0.3s;
+                color: #adb7d1;
+                font-weight: 600;
+            }
+    #first_box{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        padding: 0;
+        height: 85%;
+        width: 90%;
+        background-color: #F4F4F2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #495464;
+        font-family: 'Montserrat';
+    }
+
+
+    #box_left{
+        margin: 0;
+        padding: 0;
+        height: 90%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .stock_panier{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+            
+            .box_panier{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                border-top: 3px solid #495464;
+                font-size: 18px;
+            }
+
+                .produit_panier{
+                    width: 95%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                    .img_pannier{
+                        max-width: 25%;
+                        max-height: 80%;
+                    }
+
+                    
+                    .quantity_panier{
+                        
+                        border: 1px solid #495464;
+                        border-radius: 10px;
+                        text-align: center;
+                        max-width: 30%;
+                    }
+                    
+                    .del_panier{
+                        text-decoration: none;
+                        color: #495464;
+                    }
+
+        
+        #quantity_panier{
+            height: 25px;
+            width: 100px;
+            background-color: #495464;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            box-shadow: 2px 2px 1px #999;
+            color: #F4F4F2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+
+
+
+    #box_right{
+        margin: 0;
+        padding: 0;
+        height: 90%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+        #recap_panier{
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            #recap_name{
+                text-align: center;
+                width: 60%;
+                border-bottom: 3px solid #495464;
+            }
+
+        #total_panier{
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #shipping{
+                text-align: center;
+                width: 70%;
+                border-bottom: 3px solid #495464;
+            }
+
+
+
+
+
+    #payment{
+        width: 70%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Montserrat';
+    }
+
+        #Adresse_user{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #payment_user{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            #payment input{
+                border: 1px solid black;
+                border-radius: 15px;
+                width: 100%;
+                height: 30px;
+                text-align: center;
+            }
+
+
+            #confirm{
+                background-color: rgb(244, 244, 242);
+                border: 1px solid black;
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                font-family: 'Rhodium Libre';
+            }
+
+                #confirm:hover{
+                    font-weight: bold;
+                    background-color: #495464;
+                    color: rgb(244, 244, 242);
+                }
+
+
+}

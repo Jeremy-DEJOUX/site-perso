@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* CREATION CLASS COMMUNE */
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.a_center{
+    align-items: center;
+}
+.j_center{
+    justify-content: center
+}
+.j_around{
+    justify-content: space-around;
+}
+/* FIN CLASS COMMUNE */
+
+
+
+
+
+
+#ul_nav{
+    list-style-type: none;
+}
+#ul_nav li a{
+    text-decoration: none;
+    color: black;
+}
+#ul_nav li a:hover{
+    color: red;
+}
+main{
+    width: 100%;
+    height: 90vh;
+}
+
+#Scores{
+    width: 5vh;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#Scores_Wall {
+    width: 5vh;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Le CONTAINER DES CARTES */
+
+#container{
+    width: 90vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LES DIFFERENTES TYPE DE CARTES POUR LES IMG */
+.card {
+    height: 20vh;
+    border: 1px solid black;
+    width: 15vh;
+    padding: 0;
+    margin-right: 3vh;
+    margin-bottom: 3vh;
+}
+
+
+#mystere{
+    height: 20vh;
+    border: 1px solid black;
+    width: 15vh;
+    padding: 0;
+    background: url('../img/myst.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
+#card0{
+    background: url('../img/card0.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card1{
+    background: url('../img/card1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card2{
+    background: url('../img/card2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card3{
+    background: url('../img/card3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card4{
+    background: url('../img/card4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card5{
+    background: url('../img/card5.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card6{
+    background: url('../img/card6.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card7{
+    background: url('../img/card7.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card8{
+    background: url('../img/card8.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card9{
+    background: url('../img/card9.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#card10{
+    background: url('../img/card10.jpg') no-repeat center center;
+    background-size: cover;
+}
