@@ -97,7 +97,7 @@ class User
     
                        $cryptedpass = password_hash($password, PASSWORD_BCRYPT); // CRYPTED 
                     //    $this->login = $login ; 
-                       $insert = $this->db->prepare("INSERT INTO user (login, password, email, id_droits ) VALUES (:login, :cryptedpass ,:email, 1)"); 
+                       $insert = $this->db->prepare("INSERT INTO user (login, password, email, id_droits ) VALUES ( :login, :cryptedpass ,:email, 1)"); 
                        $insert->bindValue(":login", $login, PDO::PARAM_STR);
                        $insert->bindValue(":cryptedpass", $cryptedpass, PDO::PARAM_STR);
                        $insert->bindValue(":email", $email, PDO::PARAM_STR); 
