@@ -370,9 +370,10 @@ footer i {
 #competences{
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  color: black;
 }
 .fa-html5{
   font-size: 100px;
